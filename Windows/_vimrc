@@ -1,0 +1,21 @@
+" Muestra numero de linea actual y relativo
+set number relativenumber
+set tabstop=2
+set shiftwidth=2
+set smartindent
+set expandtab "converts the tabs into spaces
+set autoindent
+" set cursorline
+" set guifont=Arial\ 4
+set backspace=2
+
+so ~/.vim/plugins.vim
+so ~/.vim/plugins-config.vim
+" so ~/.vim/dap-config.vim
+so ~/.vim/maps.vim
+
+" Color de tema para vim
+colorscheme oceanic_material 
+hi Normal guibg=NONE ctermbg=NONE
+
+nnoremap zl :so ~/_vimrc<CR>
