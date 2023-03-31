@@ -1,0 +1,33 @@
+" Muestra numero de linea actual y relativo
+set number relativenumber
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set cursorline
+" set clipboard=unnamedplus
+
+
+let mapleader = ","
+" Guardar buffer
+nnoremap <leader>w :w<CR>
+" Salir de vim
+nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q!<CR>
+
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
+" Copia y pega desde el portapapeles del sistema
+nnoremap <leader>p "+p
+nnoremap <leader>y "+y
+
+" Configuración para shortcups de visual studio 2019
+nnoremap <leader>/  :vsc editor.action.commentLine<CR>
+<!-- nnoremap <leader>c  :vsc editor.action.addCommentLine<CR> -->
+nnoremap <leader>kd :vsc editor.action.formatDocument<CR>
+
+  " New buffer (file)
+<!-- nnoremap <leader>bn :vsc explorer.newFile<CR> -->
+<!-- nnoremap <leader>ds :vsc workbench.action.focusSideBar<CR>   -->
+<!-- nnoremap <leader>zs :vsc workbench.action.focusActiveEditorGroup<CR>   -->
+nnoremap zl :so ~/.vscodevimrc<CR>

@@ -1,0 +1,31 @@
+{
+    "editor.accessibilitySupport": "on",
+    "editor.fontFamily": "'Cascadia Code PL', Menlo, Monaco",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "symbols",
+    "redhat.telemetry.enabled": false,
+    // FORMAT DOCUMENTS BY TYPE
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // VIM CONFIGURATION
+    "vim.vimrc.enable": true,
+    "vim.leader": ",",
+    // GENERALS EDITOR
+    "files.exclude": {
+        "node_modules": true
+    },
+}

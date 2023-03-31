@@ -1,0 +1,73 @@
+" Muestra numero de linea actual y relativo
+set number relativenumber
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set cursorline
+" set clipboard=unnamedplus
+
+" ####### Archivo de configuración de mapeo de teclas en Vim #######
+" Acortando con atajos de teclas
+let mapleader = ","
+" Guardar buffer
+nnoremap <leader>w :w<CR>
+" Salir de vim
+nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q!<CR>
+
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
+" Copia y pega desde el portapapeles del sistema
+nnoremap <leader>p "+p
+nnoremap <leader>y "+y
+
+" Configuración para shortcups de visual studio 2019
+nnoremap <leader>/  :vsc Edit.CommentSelection<CR>
+nnoremap <leader>\  :vsc Edit.UncommentSelection<CR>
+nnoremap <leader>qk :vsc Tools.CustomizeKeyboard<CR>
+nnoremap <leader>b  :vsc Build.BuildSolution<CR>
+nnoremap <leader>c  :vsc Build.Compile<CR>
+nnoremap <leader>m  :vsc Edit.ToggleAllOutlining<CR>
+nnoremap <leader><Space> :vsc Tools.InvokeAceJumpCommand<CR>
+nnoremap <leader>; A;<Esc>
+nnoremap <leader>kd :vsc Edit.FormatDocument<CR>
+nnoremap <leader>f  :vsc Edit.Find<CR>
+
+" nnoremap <leader>- :vsc View.NavigateBackward<CR>
+" nnoremap <leader>+ :vsc View.NavigateForward<CR>
+
+
+"function! Comment()
+"    let ext = tolower(expand('%:e'))
+"    if ext == 'py' 
+"        let cmt1 = "'''"
+"        let cmt2 = "'''"   
+"    elseif ext == 'cpp' || ext =='java' || ext == 'css' || ext == 'js' || ext == 'c' || ext =='cs' || ext == 'rs' || ext == 'go'
+"        let cmt1 = '/*'
+"        let cmt2 = '*/'
+"    elseif ext == 'sh'
+"        let cmt1 = ":'"
+"        let cmt2 = "'"
+"    elseif ext == 'html'
+"        let cmt1 = "<!--"
+"        let cmt2 = "-->"
+"    elseif ext == 'hs'
+"        let cmt1 = "{-"
+"        let cmt2 = "-}"
+"    elseif ext == "rb"
+"        let cmt1 = "=begin"
+"        let cmt2 = "=end"
+"    endif
+"    exe line("'<")."normal O". cmt1 | exe line("'>")."normal o". cmt2 
+"endfunction
+"
+"function! UnComment()
+"    exe line("'<")."normal dd" | exe line("'>")."normal dd"   
+"endfunction
+"
+"
+"vnoremap ,m :<c-w><c-w><c-w><c-w><c-w>call Comment()<CR>
+"vnoremap m, :<c-w><c-w><c-w><c-w><c-w>call UnComment()<CR> 
+
+nnoremap zl :so ~/.vsvimrc<CR>
