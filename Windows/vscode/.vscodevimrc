@@ -23,11 +23,12 @@ nnoremap <leader>y "+y
 
 " Configuración para shortcups de visual studio 2019
 nnoremap <leader>/  :vsc editor.action.commentLine<CR>
-<!-- nnoremap <leader>c  :vsc editor.action.addCommentLine<CR> -->
+vnoremap <leader>/  :vsc editor.action.commentLine<CR>
 nnoremap <leader>kd :vsc editor.action.formatDocument<CR>
 
   " New buffer (file)
+nnoremap <leader>n :vsc workbench.action.files.newUntitledFile<CR>
 <!-- nnoremap <leader>bn :vsc explorer.newFile<CR> -->
 <!-- nnoremap <leader>ds :vsc workbench.action.focusSideBar<CR>   -->
 <!-- nnoremap <leader>zs :vsc workbench.action.focusActiveEditorGroup<CR>   -->
-nnoremap zl :so ~/.vscodevimrc<CR>
+nnoremap <leader>zl :so ~/.vscodevimrc<CR>
