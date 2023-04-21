@@ -34,6 +34,7 @@ nnoremap <leader>; A;<Esc>
 nnoremap <leader>kd :vsc Edit.FormatDocument<CR>
 nnoremap <leader>f  :vsc Edit.Find<CR>
 vnoremap <leader>f  :vsc Edit.Find<CR>
+nnoremap U  :vsc Edit.Redo<CR>
 
 " Reload vimrc file
 nnoremap <leader>zl :so ~/.vsvimrc<CR>

@@ -25,10 +25,13 @@ nnoremap <leader>y "+y
 nnoremap <leader>/  :vsc editor.action.commentLine<CR>
 vnoremap <leader>/  :vsc editor.action.commentLine<CR>
 nnoremap <leader>kd :vsc editor.action.formatDocument<CR>
+nnoremap U  :vsc extension.vim_ctrl+r<CR>
 
   " New buffer (file)
 nnoremap <leader>n :vsc workbench.action.files.newUntitledFile<CR>
 <!-- nnoremap <leader>bn :vsc explorer.newFile<CR> -->
 <!-- nnoremap <leader>ds :vsc workbench.action.focusSideBar<CR>   -->
 <!-- nnoremap <leader>zs :vsc workbench.action.focusActiveEditorGroup<CR>   -->
+
+" Reload vimrc file
 nnoremap <leader>zl :so ~/.vscodevimrc<CR>
