@@ -25,7 +25,13 @@ nnoremap <leader>y "+y
 nnoremap <leader>/  :vsc editor.action.commentLine<CR>
 vnoremap <leader>/  :vsc editor.action.commentLine<CR>
 nnoremap <leader>kd :vsc editor.action.formatDocument<CR>
+nnoremap <leader>f :vsc actions.find<CR>
+<!-- vnoremap <leader>f :vsc actions.find<CR> -->
+nnoremap <leader>h :vsc editor.action.startFindReplaceAction<CR>
+<!-- vnoremap <leader>h :vsc editor.action.startFindReplaceAction<CR> -->
 nnoremap U  :vsc extension.vim_ctrl+r<CR>
+nnoremap <leader>t :vsc workbench.action.terminal.toggleTerminal<CR>
+vnoremap <leader>t :vsc workbench.action.terminal.toggleTerminal<CR>
 
   " New buffer (file)
 nnoremap <leader>n :vsc workbench.action.files.newUntitledFile<CR>
